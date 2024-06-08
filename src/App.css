@@ -1,0 +1,191 @@
+/* *{
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container{
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  justify-content: center;
+  place-content: center;
+  object-fit: cover;
+  box-sizing: border-box;
+  background: url(./breno-machado-in9-n0JwgZ0-unsplash.jpg) center ;
+}
+.container h1{
+  color: transparent;
+  background: url(./breno-machado-in9-n0JwgZ0-unsplash.jpg) center ;
+  background-clip: text;
+  margin: 1em;
+}
+
+.container form{
+  display: grid;
+  place-content: center;
+  width: 100%;
+  padding: 1em 2em;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(255,255,255,0.35);
+  border:solid 2PX rgba(255,255,255,0.78);
+}
+.ele{
+  background-color: transparent;
+  padding: 1em;
+  margin:  0.8em 0.5em;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5em;
+  color: black;
+  font-weight: bolder;
+  border: solid 2px white;
+  transition: all 0.3s ;
+}
+.ele::placeholder{
+  color: white;
+}
+.ele:hover{
+  border:  none;
+  outline: solid 2px lightgrey;
+}
+form button{
+  border-radius: 5em;
+  padding : 0.8em ; 
+  margin: 1em 0;
+  font-size: 18px;
+  color: white;
+  border: solid 2px white;
+  background-color: transparent;
+  transition: all 0.4s;
+} 
+button:hover{
+  border: none;
+  outline: solid 2px lightgrey;
+}
+.check{
+  display: flex;
+  margin: 0 1em ;
+  justify-content: space-between;
+}
+ #pass{
+  width: 14px;
+}
+.check span:hover{
+  text-decoration: underline;
+} */
+
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+.container{
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+}
+
+img{
+  position: absolute;
+  z-index: -1;
+  content: url(./bg-images/3-image.jpg) ;
+  width: 100vw;
+  height:100vh;
+  object-fit: cover;
+}
+form{
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  padding: 1em;
+  border-radius: 1em;
+  background-color: rgba(255,255,255,0);
+  border: none;
+  box-shadow: inset 2px 2px 4px white;
+  transition: all 0.4s ;
+  backdrop-filter: blur(10px);
+}
+form:hover{
+  box-shadow: inset -2px -2px 4px white;
+  border: none;
+}
+h1{
+  display: flex;
+  font-size: clamp(2rem, 10vw, 3rem); 
+  background: url(./bg-images/3-image.jpg) center;
+  -webkit-text-stroke: 0px  white;
+  color: transparent;
+  background-size: cover;
+  background-clip: text;
+}
+h1:hover{
+  text-shadow: 1px 1px 1px white;
+}
+input.ele{
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  padding: 1em ;
+  width: 80%;
+  caret-color: white;
+  margin: 1.5em 1em ;
+  color: white;
+  font-size: clamp(0.5rem,2vw,1rem);
+  font-weight: 900;
+  border-radius: 0.5em;
+  border: none;
+  box-shadow: inset -2px -2px 8px white;
+  background: transparent;
+  transition: all 0.5s;
+}
+
+input:hover,input::selection,input:active{
+  border: none;
+  box-shadow: inset 2px 2px 8px white;
+}
+
+
+input.ele::placeholder{
+  color : white;
+}
+.check{
+  display: flex;
+  margin-top: -1em;
+  width: 80%;
+  justify-content: space-between;
+  align-items:start;
+  padding: 1rem;
+  /* gap: 3em; */
+  color: white;
+  border-radius: 0.5em;
+  justify-content: space-between;
+  /* border: solid 1px white; */
+}
+.check >span:hover{
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+
+button{
+  display: grid;
+  margin: 1em;
+  padding: 1em;
+  font-weight: 900;
+  color: white;
+  border-radius: 0.5em;
+  border: solid 2px white;
+  background: transparent;
+}
+
+button:hover{
+  outline-offset: 2px;
+  outline: solid 2px white;
+  color: black;
+  border-radius: 0.5em;
+  border: solid 2px none;
+  background:white;
+}
